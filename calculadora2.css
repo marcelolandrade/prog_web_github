@@ -1,0 +1,48 @@
+*{
+    margin: 0;/*Propriedade abreviada para definir valores para a espessura da área de margem. Se a esquerda for omitida, é o mesmo que a direita. Se bottom for omitido, é o mesmo que top, se right for omitido, é o mesmo que top. Valores negativos para propriedades de margem são permitidos, mas pode haver limites específicos de implementação*/
+    padding: 0;/*Propriedade abreviada para definir valores para a espessura da área de preenchimento. Se a esquerda for omitida, é o mesmo que a direita. Se bottom for omitido, é o mesmo que top, se right for omitido, é o mesmo que top. O valor não pode ser negativo*/
+}
+
+.fundo{/*Estiliza a cor, tipo de texto e centralização de fundo do objeto*/
+    background-image: linear-gradient(45deg, rgb(175, 190, 79), rgb(79, 42, 165));
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.calculadora{/*Estiliza a cor de pressionamento de botão, centralização da calculadora e tamanho dos cantos arrendondados*/
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    padding: 65px;
+}
+
+.botao{/*estiliza o tamanho do botão, tipo de cursor, cor do onclick e cor do alphanumericos de teclado */
+    width: 90px;
+    height: 50px;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(30, 77, 38);
+    border: none;
+    color: rgb(237, 239, 242);
+}
+
+.botao:hover{/*Estiliza o onclick black*/
+    background-color: black;
+}
+
+#resultado{/*estiliza o campo de resultado, largura do resultado, tamanho da fonte do teclado e alinhamento do texto do resultado*/ 
+    width: 375px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 30px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
